@@ -14,11 +14,17 @@
 #takes a list value changes it into a oxford comma separated list
 
 def commacode(spam):
-    
+    n = ''
     for i in spam:
-        print(i, end)
+        if spam.index(i) == 0:
+            n = "'" + n + i + ', '
+        elif spam.index(i) < len(spam)-1:
+            n = n + i + ', '
+        elif spam.index(i) == len(spam)-1:
+            n = n + 'and ' + i + "'"
+    print(n)
 
 
-elephant = [king, white, seven, nation]
+elephant = ['apples', 'bananas', 'tofu', 'cats']
 
 commacode(elephant)
