@@ -9,9 +9,7 @@ grid = [['.', '.', '.', '.', '.', '.'],
         ['.', '.', '.', '.', '.', '.']]
 yaxis = range(9)
 xaxis = range(6)
-
 for x in xaxis:
     for y in yaxis:
         print(grid[y][x], end='')
     print('')
-
