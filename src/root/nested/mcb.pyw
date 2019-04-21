@@ -14,7 +14,7 @@ if len(sys.argv) == 3 and sys.argv[1].lower() == 'save':
 elif len(sys.argv) == 3 and sys.argv[1].lower() == 'del':
     if sys.argv[1] in mcbShelf:
         del mcbShelf[sys.argv[1]]
-    elif
+    elif len(sys.argv) == 3:
         print(str(sys.argv[1])+' is not in the database') 
 elif len(sys.argv) == 2:
     #list key words or retrieve data
