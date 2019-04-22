@@ -38,7 +38,7 @@ findxpathclick('/html/body/div[1]/div/div[2]/div/div/div[3]/div/div/table/tbody/
 findxpathclick('/html/body/div[1]/div/div[1]/div/div/ul[1]/li[8]/a') #click on submittals section
 time.sleep(5)
 findxpathclick('/html/body/div[1]/div/div[1]/div[2]/div/div[2]/div/div[1]/div[2]/a[2]') #go to packages
-findxpathclick('/html/body/div[1]/div/div[1]/div[2]/div/div[2]/div/div[2]/div[1]/div[2]/div') #turn on filters
+findxpathclick('/html/body/div[1]/div/div[1]/div[2]/div/div[2]/div/div[2]/div[1]/div[1]/div[2]/button[2]') #turn on filters
 ballincourt = browser.find_element_by_xpath(\
         '/html/body/div[1]/div/div[1]/div[2]/div/div[2]/div/div[2]/div[3]/div/div[2]/div/fieldset[1]/div/div[1]/input')
 ballincourt.send_keys('jknight@integrusarch.com')
