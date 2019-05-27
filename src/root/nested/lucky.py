@@ -27,16 +27,15 @@ print('Searching ' + ' '.join(SEARCHVAR[:]) + ' on Google')
 #TODO: Retrieves the search results page.
 # Retrieve top search result links.
 soup = bs4.BeautifulSoup(res.text, 'html.parser')
-print(res.text)
+print('Parsing')
+RequestText = open('sourcetext.txt', 'w')
+RequestText.write(res.text)
+RequestText.close
 # Open a browser tab for each result.
-linkElems = soup.select('.rc a')
-print(str(linkElems))
+linkElems = soup.select('.jfp3ef a')
 print('Finding results in parsed data')
 #TODO: Opens a browser tab for each result
 numOpen = min(5, len(linkElems))
-print('almost there')
-print(str(numOpen))
 for i in range(numOpen):
     webbrowser.open('http://google.com' + linkElems[i].get('href'))
-    print(linkElems[i])
 print('done')
