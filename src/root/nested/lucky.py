@@ -19,4 +19,5 @@ import sys, requests, pyperclip
 #TODO: Gets search keywords from the command line arguments.
 
 #TODO: Retrieves the search results page.
+
 #TODO: Opens a browser tab for each result
