@@ -24,9 +24,11 @@ emailreg = re.compile(r'''(
     )''', re.VERBOSE)
 
 #TODO: Read arguments and split them up as needed
-if len(sys.argv) > 3 and sys.argv[1].search(emailreg) is True:
+if len(sys.argv) >= 3 and emailreg.search(sys.argv[1]) != None:
     EMAILADDR = sys.argv[1] 
     MSG = sys.argv[2:]
+else:
+    raise Exception('No email or message was put in')
 #TODO: open up gmail
 browser = webdriver.Firefox()
 browser.get('https://mail.google.com')
