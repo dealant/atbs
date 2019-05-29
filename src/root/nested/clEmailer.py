@@ -28,8 +28,8 @@ if len(sys.argv) > 3 and sys.argv[1].search(emailreg) is True:
     EMAILADDR = sys.argv[1] 
     MSG = sys.argv[2:]
 #TODO: open up gmail
-browser = webdriver.firefox()
-browser.get('gmail.com')
+browser = webdriver.Firefox()
+browser.get('https://mail.google.com')
 
 #TODO: paste in the email address and body
 
