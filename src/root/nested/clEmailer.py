@@ -30,8 +30,10 @@ if len(sys.argv) >= 3 and emailreg.search(sys.argv[1]) != None:
 else:
     raise Exception('No email or message was put in')
 #TODO: open up gmail
-browser = webdriver.Firefox()
-browser.get('https://mail.google.com')
+options = webdriver.ChromeOptions()
+options.add_argument('user-data-dir=C:\\Users\\alansuface\\AppData\\Local\\Google\\Chrome\\User Data')
+browser = webdriver.Chrome(chrome_options=options)
+browser.get('https://google.com')
 
 #TODO: paste in the email address and body
 
