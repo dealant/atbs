@@ -13,7 +13,7 @@ This would be a nice way to add a notification feature to your programs.
 You could also write a similar program to send messages from a Facebook or Twitter account.
 
 '''
-import sys, re
+import sys, re, time
 from selenium import webdriver
 
 emailreg = re.compile(r'''(
@@ -31,10 +31,12 @@ else:
     raise Exception('No email or message was put in')
 #TODO: open up gmail
 options = webdriver.ChromeOptions()
-options.add_argument('user-data-dir=C:\\Users\\alansuface\\AppData\\Local\\Google\\Chrome\\User Data')
-browser = webdriver.Chrome(chrome_options=options)
-browser.get('https://google.com')
-
+options.add_argument('user-data-dir=C:\\Users\\alansuface\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 1')
+browser = webdriver.Chrome(chrome_options=options) #create selenium chrome profile
+browser.get('https://mail.google.com')
+time.sleep(5)
+ComposeButton = browser.find_element_by_css_selector('#\:ff > div > div')
+ComposeButton.click
 #TODO: paste in the email address and body
 
 #TODO: hit send
