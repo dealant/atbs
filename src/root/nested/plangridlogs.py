@@ -29,8 +29,8 @@ findxpathclick('//*[@id="test-submitLogin"]') #login
 findxpathclick('/html/body/div[1]/div/div/div/div[2]/div[1]/div/div/div[2]/div/div/div/div[2]/a/span[1]/span/span')
 #select RFI's and download
 findxpathclick('/html/body/div[1]/div/div/div[2]/div[1]/div[1]/div/ul[1]/li[4]') #go to RFI section
-findxpathclick('/html/body/div[1]/div/div[2]/div/div/div[2]/div/form/div[4]/div[2]/ul/li[2]') #press open status
-findxpathclick('/html/body/div[1]/div/div[2]/div/div/div[1]/div/div/div[2]/div/button[1]') #press reports
+findxpathclick('/html/body/div[1]/div/div[2]/div/div/div[3]/div/form/div[4]/div[2]/ul/li[2]') #press open status
+findxpathclick('/html/body/div[1]/div/div[2]/div/div/div[2]/div/div/div[2]/div/button[1]') #press reports
 findxpathclick('//*[@id="csvRadio"]')#change to csv radio
 findxpathclick('/html/body/div[1]/div/div[2]/div/div/div[2]/div/div[2]/div[1]/form/div/span[2]/span[2]') #download csv file
 findxpathclick('/html/body/div[1]/div/div[2]/div/div/div[3]/div/div/table/tbody/tr[1]/td[7]/a/span[1]')
